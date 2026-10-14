@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành Bảng trong CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        /* Định kiểu bảng và gộp đường viền */
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Gộp các đường viền liền kề */
+        }
+
+        table, th, td {
+            border: 1px solid black; /* Tạo đường viền màu đen */
+        }
+
+        /* Định chiều cao tiêu đề và padding cho các ô */
+        th {
+            height: 50px;
+            background-color: #333; /* Đặt màu nền tối cho hàng tiêu đề */
+            color: white; /* Đặt màu chữ trắng cho tiêu đề */
+            text-align: center;
+        }
+
+        td {
+            padding: 15px; /* Tạo khoảng cách giữa nội dung và đường viền */
+            background-color: #f2f2f2; /* Đặt màu nền xám nhạt cho ô dữ liệu */
+            color: #333; /* Đặt màu chữ xám đậm cho dữ liệu */
+            text-align: center;
+            vertical-align: middle; /* Căn giữa theo chiều dọc */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Danh sách học sinh</h2>
+
+    <table>
+        <tr>
+            <th>Họ tên</th>
+            <th>Tuổi</th>
+            <th>Lớp</th>
+        </tr>
+        <tr>
+            <td>Nguyễn Văn A</td>
+            <td>20</td>
+            <td>Web</td>
+        </tr>
+        <tr>
+            <td>Trần Thị B</td>
+            <td>21</td>
+            <td>Web</td>
+        </tr>
+    </table>
+
+</body>
+</html>
